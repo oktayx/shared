@@ -108,3 +108,18 @@ ALTER TABLE `AspNetUserLogins`
 ALTER TABLE `AspNetUserRoles`
   ADD CONSTRAINT `ApplicationUser_Roles` FOREIGN KEY (`UserId`) REFERENCES `AspNetUsers` (`Id`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `IdentityRole_Users` FOREIGN KEY (`RoleId`) REFERENCES `AspNetRoles` (`Id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+
+----------------------Drop Tables----------------------
+
+DROP TABLE AspNetUserLogins;
+
+DROP TABLE AspNetUserRoles;
+
+DROP TABLE AspNetUserClaims;
+
+DROP TABLE AspNetRoleClaims;
+
+DROP TABLE AspNetRoles;
+
+DROP TABLE AspNetUsers;
